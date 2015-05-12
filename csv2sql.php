@@ -1,4 +1,9 @@
 <?php
+if (count($argv) != 3) {
+    echo "$argv[0] csv_file db_table\n";
+    exit;
+}
+
 $file = $argv[1];
 $table = $argv[2];
 
